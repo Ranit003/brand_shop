@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "100984270528",
+    "project_id": "brandsop-7b958",
+    "storage_bucket": "brandsop-7b958.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100984270528:android:a778a0d8a4fde6e9300725",
+        "android_client_info": {
+          "package_name": "com.ranit.brandshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDcVcX9n42URZtEDlwCrtSGY0ZwUIHHrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
