@@ -2,6 +2,7 @@
 
 import 'package:brand_shop/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 
 class RegistrationTabPage extends StatefulWidget {
@@ -19,6 +20,20 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
   TextEditingController confirmPasswordTextEditigController=TextEditingController();
   GlobalKey<FormState> Formkey = GlobalKey<FormState>();
 
+
+  XFile? imgXFile;
+  final ImagePicker imagePicker =ImagePicker();
+
+  getImageFromGallery() async
+  {
+    imgXFile=await imagePicker.pickImage(source: ImageSource.gallery);
+    
+    setState((){
+      imgXFile;
+    });
+
+  }
+
   @override
   Widget build(BuildContext context) {
 
@@ -32,6 +47,8 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
 
             GestureDetector(
               onTap: (){
+                
+                getImageFromGallery();
 
               },
               child: CircleAvatar(
